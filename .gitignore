@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# Database & Persistent Vector Store (ChromaDB)
+data/chroma/
+*.chroma
+*.sqlite3
+
+# Uploaded & Sample Documents (sensitive land records)
+data/sample_pdfs/*.pdf
+data/uploads/
+*.pdf
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
