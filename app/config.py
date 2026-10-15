@@ -63,6 +63,11 @@ class Settings:
     MAX_UPLOAD_MB: int = int(os.getenv("MAX_UPLOAD_MB", "10"))
     MAX_PAGES: int = int(os.getenv("MAX_PAGES", "30"))
 
+    # Document Metadata Database (Phase 2+)
+    DOCS_DB_PATH: str = os.getenv(
+        "DOCS_DB_PATH", str(BASE_DIR / "data" / "documents.sqlite3")
+    )
+
     # OCR Languages (Phase 3+)
     OCR_LANGS: str = os.getenv("OCR_LANGS", "mar+eng")
 
