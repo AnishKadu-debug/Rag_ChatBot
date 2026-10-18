@@ -1,0 +1,232 @@
+[
+  {
+    "id": "q01",
+    "question": "Who is the occupant or land owner of the property?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Ramesh Vishnu Patil is the occupant / land owner.",
+    "expected_keywords": ["Ramesh", "Patil"],
+    "notes": "Directly stated on Page 1: Occupant / Land Owner: Ramesh Vishnu Patil"
+  },
+  {
+    "id": "q02",
+    "question": "What is the Survey or Gat Number mentioned in the 7/12 extract?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Survey / Gat Number is 45/2.",
+    "expected_keywords": ["45/2"],
+    "notes": "Directly stated on Page 1: Survey / Gat Number: 45/2"
+  },
+  {
+    "id": "q03",
+    "question": "What is the total land area recorded in the 7/12 extract?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Total Area is 0.85 Hectare.",
+    "expected_keywords": ["0.85", "Hectare"],
+    "notes": "Directly stated on Page 1: Total Area: 0.85 Hectare"
+  },
+  {
+    "id": "q04",
+    "question": "What is the Khata Number of this land account?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Khata Number is 104.",
+    "expected_keywords": ["104"],
+    "notes": "Directly stated on Page 1: Khata Number: 104"
+  },
+  {
+    "id": "q05",
+    "question": "How much of the land area is cultivable?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Cultivable Land is 0.80 Hectare.",
+    "expected_keywords": ["0.80", "Hectare"],
+    "notes": "Directly stated on Page 1: Cultivable Land: 0.80 Hectare"
+  },
+  {
+    "id": "q06",
+    "question": "What is the area of uncultivable land (Poti-Kharaba)?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Poti-Kharaba (Uncultivable) is 0.05 Hectare.",
+    "expected_keywords": ["0.05", "Poti-Kharaba"],
+    "notes": "Directly stated on Page 1: Poti-Kharaba (Uncultivable): 0.05 Hectare"
+  },
+  {
+    "id": "q07",
+    "question": "Which crop is cultivated on this land parcel and in which season?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Soyabean during the Kharif season.",
+    "expected_keywords": ["Soyabean", "Kharif"],
+    "notes": "Directly stated on Page 1: Crop: Soyabean (Kharif season)"
+  },
+  {
+    "id": "q08",
+    "question": "What is the mutation entry number recorded in the Ferfar register?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "Mutation Entry Number is 1024.",
+    "expected_keywords": ["1024"],
+    "notes": "Directly stated on Page 2: Mutation Entry Number: 1024"
+  },
+  {
+    "id": "q09",
+    "question": "What is the date of entry recorded for the Ferfar mutation?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "Date of Entry is 15-March-2022.",
+    "expected_keywords": ["15-March-2022"],
+    "notes": "Directly stated on Page 2: Date of Entry: 15-March-2022"
+  },
+  {
+    "id": "q10",
+    "question": "What type of mutation is documented in the Ferfar register?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "Type is Succession / Waras.",
+    "expected_keywords": ["Succession", "Waras"],
+    "notes": "Directly stated on Page 2: Type: Succession / Waras"
+  },
+  {
+    "id": "q11",
+    "question": "Who certified the Ferfar mutation entry?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "Certified by Talathi.",
+    "expected_keywords": ["Talathi"],
+    "notes": "Directly stated on Page 2: Status: Certified by Talathi."
+  },
+  {
+    "id": "q12",
+    "question": "Why was parcel 45/2 transferred to Ramesh Vishnu Patil according to the mutation details?",
+    "category": "explicit",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "After the demise of Vishnu Patil, parcel 45/2 mutated to legal heir Ramesh Vishnu Patil.",
+    "expected_keywords": ["demise", "Vishnu Patil", "legal heir"],
+    "notes": "Directly stated on Page 2: Details: After the demise of Vishnu Patil, parcel 45/2 mutated to legal heir Ramesh Vishnu Patil."
+  },
+  {
+    "id": "q13",
+    "question": "In which village, taluka, and district is this land located?",
+    "category": "multi_page",
+    "is_answerable": true,
+    "expected_pages": [1, 2],
+    "expected_answer": "Village: Kothrud, Taluka: Haveli, District: Pune.",
+    "expected_keywords": ["Kothrud", "Haveli", "Pune"],
+    "notes": "Village is on Page 1 & 2; Taluka and District are on Page 1."
+  },
+  {
+    "id": "q14",
+    "question": "Provide a complete ownership history combining the 7/12 extract and the Ferfar mutation register.",
+    "category": "multi_page",
+    "is_answerable": true,
+    "expected_pages": [1, 2],
+    "expected_answer": "The current occupant/owner is Ramesh Vishnu Patil for parcel 45/2 in Kothrud (Page 1). He acquired the land as legal heir through succession (Waras mutation entry 1024) following the demise of Vishnu Patil (Page 2).",
+    "expected_keywords": ["Ramesh", "Vishnu", "succession"],
+    "notes": "Requires synthesizing current owner from Page 1 and acquisition succession from Page 2."
+  },
+  {
+    "id": "q15",
+    "question": "Who holds parcel 45/2 on the 7/12, and who certified the succession entry on the mutation register?",
+    "category": "multi_page",
+    "is_answerable": true,
+    "expected_pages": [1, 2],
+    "expected_answer": "Ramesh Vishnu Patil holds parcel 45/2 on the 7/12 (Page 1), and the mutation entry was certified by the Talathi (Page 2).",
+    "expected_keywords": ["Ramesh", "Talathi"],
+    "notes": "Requires retrieving owner from Page 1 and certification authority from Page 2."
+  },
+  {
+    "id": "q16",
+    "question": "Who is the title holder of this agricultural parcel?",
+    "category": "paraphrased",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Ramesh Vishnu Patil.",
+    "expected_keywords": ["Ramesh Vishnu Patil"],
+    "notes": "Paraphrased: 'title holder' and 'agricultural parcel' instead of 'Occupant / Land Owner' and 'Survey / Gat Number'."
+  },
+  {
+    "id": "q17",
+    "question": "What produce is farmed on this plot during the monsoon season?",
+    "category": "paraphrased",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "Soyabean during the Kharif season.",
+    "expected_keywords": ["Soyabean"],
+    "notes": "Paraphrased: 'produce is farmed' and 'monsoon season' instead of 'Crop' and 'Kharif season'."
+  },
+  {
+    "id": "q18",
+    "question": "How was ownership passed down after the previous landholder died?",
+    "category": "paraphrased",
+    "is_answerable": true,
+    "expected_pages": [2],
+    "expected_answer": "Through succession (Waras) to legal heir Ramesh Vishnu Patil after the demise of Vishnu Patil (mutation entry 1024).",
+    "expected_keywords": ["succession", "Waras", "Vishnu"],
+    "notes": "Paraphrased: 'ownership passed down after the previous landholder died' instead of 'demise' and 'Succession / Waras'."
+  },
+  {
+    "id": "q19",
+    "question": "या जमिनीचे एकूण क्षेत्रफळ आणि वहितीखालील जमीन किती आहे?",
+    "category": "paraphrased",
+    "is_answerable": true,
+    "expected_pages": [1],
+    "expected_answer": "एकूण क्षेत्रफळ 0.85 हेक्टर आणि वहितीखालील (cultivable) जमीन 0.80 हेक्टर आहे.",
+    "expected_keywords": ["0.85", "0.80"],
+    "notes": "Marathi phrased query testing cross-lingual semantic matching for total and cultivable area."
+  },
+  {
+    "id": "q20",
+    "question": "What is the annual land revenue tax or assessment cess payable for this survey number?",
+    "category": "absent",
+    "is_answerable": false,
+    "expected_pages": [],
+    "expected_answer": "NOT_FOUND / Document does not contain tax or cess information.",
+    "expected_keywords": [],
+    "notes": "Domain-relevant question whose answer is absent from the PDF."
+  },
+  {
+    "id": "q21",
+    "question": "Is there any outstanding bank loan or mortgage encumbrance listed on this land record?",
+    "category": "absent",
+    "is_answerable": false,
+    "expected_pages": [],
+    "expected_answer": "NOT_FOUND / Document does not list any bank loan or mortgage.",
+    "expected_keywords": [],
+    "notes": "Domain-relevant question whose answer is absent from the PDF."
+  },
+  {
+    "id": "q22",
+    "question": "What is the market valuation or government ready reckoner rate for land in Kothrud?",
+    "category": "absent",
+    "is_answerable": false,
+    "expected_pages": [],
+    "expected_answer": "NOT_FOUND / Document does not contain market valuation or ready reckoner rate.",
+    "expected_keywords": [],
+    "notes": "Out-of-document land query."
+  },
+  {
+    "id": "q23",
+    "question": "Can you provide a recipe for authentic Maharashtrian misal pav?",
+    "category": "absent",
+    "is_answerable": false,
+    "expected_pages": [],
+    "expected_answer": "NOT_FOUND / General question completely unrelated to land records.",
+    "expected_keywords": [],
+    "notes": "Completely off-topic general question."
+  }
+]

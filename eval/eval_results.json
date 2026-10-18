@@ -1,0 +1,760 @@
+{
+  "retrieval": {
+    "total_questions": 23,
+    "answerable_count": 19,
+    "absent_count": 4,
+    "top_k": 4,
+    "distance_threshold": 0.45,
+    "hit_rate_at_1": 1.0,
+    "hit_rate_at_k": 1.0,
+    "mean_reciprocal_rank": 1.0,
+    "multi_page_coverage": 1.0,
+    "distance_stats_answerable": {
+      "min": 0.1391,
+      "max": 0.2398,
+      "mean": 0.1927,
+      "median": 0.2017
+    },
+    "distance_stats_absent": {
+      "min": 0.1888,
+      "max": 0.2344,
+      "mean": 0.2127,
+      "median": 0.2138
+    },
+    "threshold_analysis": {
+      "0.20": {
+        "true_positives": 9,
+        "false_negatives": 10,
+        "true_negatives": 2,
+        "false_positives": 2,
+        "accuracy": 0.4783,
+        "precision": 0.8182,
+        "recall": 0.4737,
+        "f1": 0.6
+      },
+      "0.25": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.30": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.35": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.40": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.45": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.50": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      },
+      "0.55": {
+        "true_positives": 19,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "false_positives": 4,
+        "accuracy": 0.8261,
+        "precision": 0.8261,
+        "recall": 1.0,
+        "f1": 0.9048
+      }
+    },
+    "items": [
+      {
+        "question_id": "q01",
+        "question": "Who is the occupant or land owner of the property?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.21673762798309326,
+          0.2317427396774292
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.21673762798309326,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q02",
+        "question": "What is the Survey or Gat Number mentioned in the 7/12 extract?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.23415488004684448,
+          0.24522334337234497
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.23415488004684448,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q03",
+        "question": "What is the total land area recorded in the 7/12 extract?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.23817890882492065,
+          0.2749742269515991
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.23817890882492065,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q04",
+        "question": "What is the Khata Number of this land account?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.16569650173187256,
+          0.18490391969680786
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.16569650173187256,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q05",
+        "question": "How much of the land area is cultivable?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.20165091753005981,
+          0.26026129722595215
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.20165091753005981,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q06",
+        "question": "What is the area of uncultivable land (Poti-Kharaba)?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.17308247089385986,
+          0.23850178718566895
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.17308247089385986,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q07",
+        "question": "Which crop is cultivated on this land parcel and in which season?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.20947575569152832,
+          0.2572985291481018
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.20947575569152832,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q08",
+        "question": "What is the mutation entry number recorded in the Ferfar register?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.14370477199554443,
+          0.27882885932922363
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.14370477199554443,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q09",
+        "question": "What is the date of entry recorded for the Ferfar mutation?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.16044461727142334,
+          0.29913991689682007
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.16044461727142334,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q10",
+        "question": "What type of mutation is documented in the Ferfar register?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.16239380836486816,
+          0.29414963722229004
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.16239380836486816,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q11",
+        "question": "Who certified the Ferfar mutation entry?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.16568231582641602,
+          0.30108433961868286
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.16568231582641602,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q12",
+        "question": "Why was parcel 45/2 transferred to Ramesh Vishnu Patil according to the mutation details?",
+        "category": "explicit",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.13913440704345703,
+          0.22017985582351685
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.13913440704345703,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q13",
+        "question": "In which village, taluka, and district is this land located?",
+        "category": "multi_page",
+        "is_answerable": true,
+        "expected_pages": [
+          1,
+          2
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.204245924949646,
+          0.23614352941513062
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.204245924949646,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q14",
+        "question": "Provide a complete ownership history combining the 7/12 extract and the Ferfar mutation register.",
+        "category": "multi_page",
+        "is_answerable": true,
+        "expected_pages": [
+          1,
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.18749284744262695,
+          0.24673497676849365
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.18749284744262695,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q15",
+        "question": "Who holds parcel 45/2 on the 7/12, and who certified the succession entry on the mutation register?",
+        "category": "multi_page",
+        "is_answerable": true,
+        "expected_pages": [
+          1,
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.15396100282669067,
+          0.24574041366577148
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.15396100282669067,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q16",
+        "question": "Who is the title holder of this agricultural parcel?",
+        "category": "paraphrased",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.20794904232025146,
+          0.22232776880264282
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.20794904232025146,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q17",
+        "question": "What produce is farmed on this plot during the monsoon season?",
+        "category": "paraphrased",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.23978781700134277,
+          0.2665618658065796
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.23978781700134277,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q18",
+        "question": "How was ownership passed down after the previous landholder died?",
+        "category": "paraphrased",
+        "is_answerable": true,
+        "expected_pages": [
+          2
+        ],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.2264348864555359,
+          0.2677432894706726
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.2264348864555359,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q19",
+        "question": "या जमिनीचे एकूण क्षेत्रफळ आणि वहितीखालील जमीन किती आहे?",
+        "category": "paraphrased",
+        "is_answerable": true,
+        "expected_pages": [
+          1
+        ],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.23165756464004517,
+          0.27059924602508545
+        ],
+        "hit_at_1": true,
+        "hit_at_k": true,
+        "all_pages_hit": true,
+        "reciprocal_rank": 1.0,
+        "min_distance": 0.23165756464004517,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q20",
+        "question": "What is the annual land revenue tax or assessment cess payable for this survey number?",
+        "category": "absent",
+        "is_answerable": false,
+        "expected_pages": [],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.23440158367156982,
+          0.2634838819503784
+        ],
+        "hit_at_1": false,
+        "hit_at_k": false,
+        "all_pages_hit": false,
+        "reciprocal_rank": 0.0,
+        "min_distance": 0.23440158367156982,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q21",
+        "question": "Is there any outstanding bank loan or mortgage encumbrance listed on this land record?",
+        "category": "absent",
+        "is_answerable": false,
+        "expected_pages": [],
+        "retrieved_pages": [
+          2,
+          1
+        ],
+        "retrieved_distances": [
+          0.23222589492797852,
+          0.2373402714729309
+        ],
+        "hit_at_1": false,
+        "hit_at_k": false,
+        "all_pages_hit": false,
+        "reciprocal_rank": 0.0,
+        "min_distance": 0.23222589492797852,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q22",
+        "question": "What is the market valuation or government ready reckoner rate for land in Kothrud?",
+        "category": "absent",
+        "is_answerable": false,
+        "expected_pages": [],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.18876832723617554,
+          0.20095288753509521
+        ],
+        "hit_at_1": false,
+        "hit_at_k": false,
+        "all_pages_hit": false,
+        "reciprocal_rank": 0.0,
+        "min_distance": 0.18876832723617554,
+        "passes_threshold": true
+      },
+      {
+        "question_id": "q23",
+        "question": "Can you provide a recipe for authentic Maharashtrian misal pav?",
+        "category": "absent",
+        "is_answerable": false,
+        "expected_pages": [],
+        "retrieved_pages": [
+          1,
+          2
+        ],
+        "retrieved_distances": [
+          0.1954367756843567,
+          0.2101486325263977
+        ],
+        "hit_at_1": false,
+        "hit_at_k": false,
+        "all_pages_hit": false,
+        "reciprocal_rank": 0.0,
+        "min_distance": 0.1954367756843567,
+        "passes_threshold": true
+      }
+    ]
+  },
+  "generation": {
+    "skipped": true,
+    "skip_reason": "GEMINI_API_KEY is not configured. Real LLM answer generation evaluation was skipped. (MockLLMClient is not used to claim real answer quality per project requirements).",
+    "total_evaluated": 0,
+    "correct_count": 0,
+    "incomplete_count": 0,
+    "unsupported_count": 0,
+    "incorrect_count": 0,
+    "accuracy": 0.0,
+    "citation_accuracy": 0.0,
+    "absent_fallback_accuracy": 0.0,
+    "items": []
+  },
+  "tuning": [
+    {
+      "chunk_size": 500,
+      "chunk_overlap": 100,
+      "top_k": 2,
+      "distance_threshold": 0.45,
+      "total_chunks": 2,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 500,
+      "chunk_overlap": 100,
+      "top_k": 4,
+      "distance_threshold": 0.45,
+      "total_chunks": 2,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 500,
+      "chunk_overlap": 100,
+      "top_k": 4,
+      "distance_threshold": 0.35,
+      "total_chunks": 2,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 500,
+      "chunk_overlap": 100,
+      "top_k": 4,
+      "distance_threshold": 0.55,
+      "total_chunks": 2,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 250,
+      "chunk_overlap": 50,
+      "top_k": 2,
+      "distance_threshold": 0.45,
+      "total_chunks": 4,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 0.3333333333333333,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 250,
+      "chunk_overlap": 50,
+      "top_k": 4,
+      "distance_threshold": 0.45,
+      "total_chunks": 4,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 250,
+      "chunk_overlap": 50,
+      "top_k": 4,
+      "distance_threshold": 0.35,
+      "total_chunks": 4,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    },
+    {
+      "chunk_size": 250,
+      "chunk_overlap": 50,
+      "top_k": 4,
+      "distance_threshold": 0.55,
+      "total_chunks": 4,
+      "hit_rate_at_1": 1.0,
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "multi_page_coverage": 1.0,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1_score": 0.9048
+    }
+  ]
+}

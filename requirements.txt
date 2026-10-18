@@ -1,9 +1,42 @@
-# Phase 0: Core API Framework & Server
+# ==============================================================================
+# WhatsApp Land Records RAG Chatbot — Dependency File
+# ==============================================================================
+# Python: 3.14.7 (tested)
+# All versions pinned from the verified virtual environment on 2026-10-15.
+# Install with: pip install -r requirements.txt
+# ==============================================================================
+
+# ── Phase 0: API Framework ─────────────────────────────────────────────────────
 fastapi==0.143.1
 uvicorn==0.54.0
 pydantic==2.14.1
 python-dotenv==1.2.4
+python-multipart==0.0.32  # Needed for Phase 2 multipart file upload
 
-# Phase 0: Testing & TestClient HTTP Support
+# ── Phase 0 & 1: Testing ───────────────────────────────────────────────────────
 pytest==9.1.1
+
+# ── Phase 1: PDF Extraction ────────────────────────────────────────────────────
+pymupdf==1.28.2
+
+# ── Phase 1: Embeddings (multilingual-e5-base) ─────────────────────────────────
+sentence-transformers==6.1.0
+torch==2.14.1
+transformers==5.19.0
+tokenizers==0.23.3
+huggingface_hub==1.33.0
+
+# ── Phase 1: Vector Database ───────────────────────────────────────────────────
+chromadb==1.5.9
+
+# ── Phase 1: LLM — Gemini Provider ────────────────────────────────────────────
+google-genai==2.31.0
+
+# ── Phase 1: LLM — Grok (xAI) Provider ───────────────────────────────────────
+# httpx is used at runtime by GrokLLMClient for xAI API calls (also used by tests)
 httpx==0.28.1
+
+# ── Phase 3: OCR (Tesseract Python Wrapper & Imaging) ──────────────────────────
+pytesseract==0.3.13
+pillow==12.3.0
+

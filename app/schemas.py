@@ -87,6 +87,12 @@ class ChatRequest(BaseModel):
         default_factory=list,
         description="Recent conversation history turns for multi-turn dialogue context.",
     )
+    language: Optional[str] = Field(
+        default="en",
+        description="Target answer language: 'en' (English) or 'mr' (Marathi). Defaults to 'en'.",
+        pattern="^(en|mr|hi)$",
+        examples=["en"],
+    )
 
 
 class SourceSnippetItem(BaseModel):

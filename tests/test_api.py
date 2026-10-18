@@ -79,6 +79,15 @@ def api_test_env():
         tmp_path = Path(tmp_dir)
         test_db = str(tmp_path / "test_docs.sqlite3")
         registry = DocumentRegistry(db_path=test_db)
+        # Register a ready official document so API chat endpoints have an active official document
+        registry.add_document(
+            doc_id="d_official_fixture",
+            user_id="official",
+            filename="official_land_records.pdf",
+            pages=50,
+            is_official=True,
+            status="ready",
+        )
 
         test_chroma = str(tmp_path / "chroma")
         vector_store = ChromaVectorStore(
@@ -165,7 +174,10 @@ def test_upload_pdf_success(api_test_env):
     registry = api_test_env["registry"]
     headers = {"X-API-Key": VALID_API_KEY}
 
-    pdf_bytes = make_pdf_bytes(["Digital 7/12 Gat 45 Owner Ramesh Patil", "Ferfar Entry 1024"])
+    pdf_bytes = make_pdf_bytes([
+        "Digital 7/12 Gat 45 Owner Ramesh Patil Village Haveli Pune",
+        "Ferfar Entry 1024 recorded on 15 March 2024 with certified seal",
+    ])
     files = {"file": ("7_12.pdf", io.BytesIO(pdf_bytes), "application/pdf")}
     data = {"user_id": "user_alice"}
 
@@ -371,8 +383,8 @@ def test_list_and_delete_documents(api_test_env):
     headers = {"X-API-Key": VALID_API_KEY}
 
     # 1. Alice uploads two documents
-    pdf1 = make_pdf_bytes(["Doc 1 content."])
-    pdf2 = make_pdf_bytes(["Doc 2 content."])
+    pdf1 = make_pdf_bytes(["Doc 1 content with detailed village revenue records."])
+    pdf2 = make_pdf_bytes(["Doc 2 content with detailed mutation entry records."])
 
     res1 = client.post(
         "/api/v1/upload",
@@ -391,7 +403,7 @@ def test_list_and_delete_documents(api_test_env):
     doc2_id = res2.json()["doc_id"]
 
     # 2. Bob uploads one document
-    pdf_bob = make_pdf_bytes(["Bob content."])
+    pdf_bob = make_pdf_bytes(["Bob content with agricultural land holding details."])
     res_bob = client.post(
         "/api/v1/upload",
         headers=headers,
